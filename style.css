@@ -1,197 +1,115 @@
-/* LIGHT PURPLE PORTFOLIO THEME */
-
+/* Body Background */
 body {
   background: linear-gradient(
     135deg,
-    #FBF9FF,
-    #F3EDFC,
+    #F5FAFF,
+    #EAF4FF,
     #FFFFFF
   );
   color: #111116;
   overflow-x: hidden;
 }
 
-/* Hero section */
-
+/* Hero Section */
 .hero {
   background: linear-gradient(
     120deg,
-    #FBF9FF,
-    #E9DFFF
+    #F5FAFF,
+    #DCEBFF,
+    #EDE5FF
   );
   border-radius: 0 0 40px 40px;
 }
 
-/* Bold headings */
-
-h1,
-h2,
-h3,
-.brand {
-  color: #111116;
-  font-weight: 850;
-}
-
-h1 em {
-  color: #9975D4;
-}
-
-/* Glass effect cards */
-
-.panel,
-.project,
-.skill-card,
-.contact-link,
-form {
-  background: rgba(255, 255, 255, 0.65);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-
-  border: 1px solid rgba(255, 255, 255, 0.9);
-  border-radius: 26px;
-
-  box-shadow: 0 12px 35px
-    rgba(91, 61, 140, 0.08);
-
-  transition: transform 0.3s ease,
-              box-shadow 0.3s ease;
-}
-
-/* Hover animation */
-
-.panel:hover,
-.project:hover,
-.skill-card:hover {
-  transform: translateY(-6px);
-
-  box-shadow: 0 20px 45px
-    rgba(91, 61, 140, 0.15);
+/* Light Blue + Lavender Theme */
+:root {
+  --ink: #111116;
+  --muted: #657084;
+  --violet: #A8C7FA;
+  --violet2: #DCEBFF;
+  --line: #D8E6F5;
+  --paper: #F8FBFF;
+  --wash: #EAF4FF;
+  --mint: #E6EFFF;
+  --shadow: 0 18px 55px rgba(75, 125, 190, 0.12);
 }
 
 /* Buttons */
-
+button,
 .btn {
-  border-radius: 50px;
-  border: 1px solid #DCCCF8;
-  background: rgba(255, 255, 255, 0.75);
+  background: linear-gradient(
+    135deg,
+    #A8C7FA,
+    #C9B8F5
+  );
   color: #111116;
+  border: none;
+  border-radius: 30px;
   transition: all 0.3s ease;
 }
 
-.btn.primary {
-  background: #111116;
-  border-color: #111116;
-  color: #FFFFFF;
-}
-
-.btn.primary:hover {
-  background: #9975D4;
-  border-color: #9975D4;
+button:hover,
+.btn:hover {
   transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(100, 140, 210, 0.2);
 }
 
-/* Skill icons and tags */
-
-.skill-icon,
-.step-num {
-  background: #E9DFFF;
-  color: #7652B5;
-  border-radius: 14px;
+/* Cards */
+.card,
+.project-card,
+.skill-card {
+  background: rgba(255, 255, 255, 0.75);
+  border: 1px solid #D8E6F5;
+  border-radius: 24px;
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(15px);
+  transition: all 0.3s ease;
 }
 
-.pill {
-  background: rgba(255, 255, 255, 0.7);
-  border-color: #E9E0F5;
-  color: #4B405F;
-  border-radius: 50px;
+.card:hover,
+.project-card:hover,
+.skill-card:hover {
+  transform: translateY(-6px);
+  border-color: #A8C7FA;
 }
 
-/* Project preview */
-
-.project-visual {
-  background: linear-gradient(
-    135deg,
-    #E9DFFF,
-    #F8F5FF
-  );
+/* Headings */
+h1,
+h2,
+h3 {
+  color: #111116;
 }
 
-.mock-side {
-  background: #211B2C;
+h1 span,
+h1 em {
+  color: #789FE8;
 }
 
-.mock-side i {
-  background: #B69AE8;
-}
-
-.mock-chart:after {
-  border-bottom-color: #9975D4;
-}
-
-/* Contact section */
-
-.contact {
-  background: linear-gradient(
-    120deg,
-    #F3EDFC,
-    #FBF9FF
-  );
-  border-radius: 40px 40px 0 0;
-}
-
-/* Input fields */
-
+/* Input Fields */
 input,
 textarea {
-  border: 1px solid #DCCCF8;
+  background: #FFFFFF;
+  border: 1px solid #D8E6F5;
   border-radius: 14px;
-  background: rgba(255, 255, 255, 0.85);
   color: #111116;
 }
 
 input:focus,
 textarea:focus {
   outline: none;
-  border-color: #9975D4;
-  box-shadow: 0 0 0 3px
-    rgba(153, 117, 212, 0.15);
+  border-color: #A8C7FA;
+  box-shadow: 0 0 0 3px rgba(168, 199, 250, 0.2);
 }
 
-/* Mobile friendly */
-
-@media (max-width: 600px) {
-  .wrap {
-    width: calc(100% - 30px);
-  }
-
-  .panel,
-  .project,
-  .skill-card,
-  form {
-    border-radius: 22px;
-  }
-
+/* Mobile Friendly */
+@media (max-width: 768px) {
   .hero {
-    border-radius: 0 0 28px 28px;
+    border-radius: 0 0 25px 25px;
   }
 
-  .contact {
-    border-radius: 28px 28px 0 0;
-  }
-
-  .actions .btn {
-    flex: 1 1 auto;
-  }
-}
-
-/* Respect reduced motion */
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation: none !important;
-    transition: none !important;
-    scroll-behavior: auto !important;
+  .card,
+  .project-card,
+  .skill-card {
+    border-radius: 18px;
   }
 }
