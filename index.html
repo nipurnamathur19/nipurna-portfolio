@@ -1,339 +1,493 @@
+/* ==========================================================================
+   RESET & BASE STYLES
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Nipurnna Mathur - Technical Customer Support Specialist, UI/UX Designer and WordPress Developer.">
-  <title>Nipurnna Mathur | Portfolio</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background-color: #f8fafc;
+  color: #1e293b;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
 
-<header class="navbar">
-  <a href="#home" class="logo">NM<span>.</span></a>
-  <button id="menuBtn" class="menu-btn">☰</button>
-  <nav id="navLinks">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#experience">Experience</a>
-    <a href="#skills">Skills</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-<main>
-<section class="hero section" id="home">
-  <div class="hero-content">
-    <p class="eyebrow">TECHNICAL SUPPORT · UI/UX · WORDPRESS</p>
-    <h1>Making technology<br>more <span>useful and human.</span></h1>
-    <p class="intro">
-      Hi, I'm Nipurnna Mathur. I'm a Technical Customer Support
-      professional with experience in UI/UX design, WordPress
-      development, troubleshooting, and user-focused problem solving.
-    </p>
-    <div class="buttons">
-      <a href="#projects" class="btn primary">Explore My Work ↗</a>
-      <a href="#contact" class="btn secondary">Contact Me</a>
-    </div>
-  </div>
+ul {
+  list-style: none;
+}
 
-  <div class="hero-card">
-    <p class="card-label">MY PROFILE</p>
-    <div class="monogram">NM</div>
-    <h2>Nipurnna Mathur</h2>
-    <p>Technical Customer Support Specialist</p>
-    <div class="tags">
-      <span>HTML & CSS</span>
-      <span>WordPress</span>
-      <span>Figma</span>
-      <span>Bootstrap</span>
-    </div>
-  </div>
-</section>
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
 
-<section class="section" id="about">
-  <div class="section-heading">
-    <p class="eyebrow">ABOUT ME</p>
-    <h2>Technical understanding.<br><span>People-first approach.</span></h2>
-  </div>
+/* ==========================================================================
+   TYPOGRAPHY & SECTIONS
+   ========================================================================== */
+.section {
+  padding: 80px 0;
+}
 
-  <div class="about-grid">
-    <div class="panel">
-      <p>
-        Detail-oriented Technical Support professional with hands-on
-        experience in HTML, CSS,WordPress, and UI/UX
-        fundamentals. I enjoy diagnosing technical issues, explaining
-        solutions clearly, and helping users have a smooth digital
-        experience.
-      </p>
-      <p>
-        My experience includes troubleshooting website and platform
-        issues, maintaining WordPress themes and plugins, creating
-        Figma wireframes and prototypes, and collaborating with
-        design, development, and stakeholders to resolve problems.
-      </p>
-    </div>
+.bg-white {
+  background-color: #ffffff;
+}
 
-    <div class="stats">
-      <div class="stat"><strong>CMS</strong><span>WordPress themes & plugins</span></div>
-      <div class="stat"><strong>Design</strong><span>Figma, wireframes, prototypes</span></div>
-      <div class="stat"><strong>Web</strong><span>HTML, CSS</span></div>
-      <div class="stat"><strong>Support</strong><span>Troubleshooting & communication</span></div>
-    </div>
-  </div>
-</section>
+.bg-light {
+  background-color: #f5f6ff;
+}
 
-<section class="section" id="projects">
-  <div class="section-heading">
-    <p class="eyebrow">SELECTED WORK</p>
-    <h2>Projects & <span>practice.</span></h2>
-    <p class="section-description">
-      A selection of personal projects and professional website work.
-    </p>
-  </div>
+.section-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #6366f1;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
 
-  <div class="project-grid">
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
 
-    <article class="project">
-      <div class="project-art purple">
-        <div class="mock-window">
-          <div class="mock-top">● ● ●</div>
-          <div class="mock-line lime"></div>
-          <div class="mock-line"></div>
-          <div class="mock-line short"></div>
-          <div class="mock-boxes"><i></i><i></i><i></i></div>
-        </div>
-      </div>
-      <div class="project-content">
-        <p class="project-type">PERSONAL PROJECT</p>
-        <h3>Hospital Management Website</h3>
-        <p>
-          Built a responsive, mobile-friendly website with appointment,
-          doctor, and emergency service sections. Tested layouts across
-          devices and browsers and resolved display issues.
-        </p>
-        <div class="tags">
-          <span>HTML</span><span>CSS</span><span>Responsive UI</span><span>Testing</span>
-        </div>
-      </div>
-    </article>
+.section-subtitle {
+  font-size: 0.925rem;
+  color: #64748b;
+  margin-bottom: 40px;
+  max-width: 600px;
+}
 
-    <article class="project">
-      <div class="project-art blue">
-        <div class="mock-window">
-          <div class="mock-top">● ● ●</div>
-          <div class="mock-line lime"></div>
-          <div class="mock-boxes"><i></i><i></i><i></i></div>
-          <div class="mock-line"></div>
-        </div>
-      </div>
-      <div class="project-content">
-        <p class="project-type">PERSONAL PROJECT</p>
-        <h3>QuizBox Application</h3>
-        <p>
-          Developed an interactive quiz platform with real-time scoring
-          and instant feedback. Debugged dynamic question-handling logic
-          to provide a smooth user experience.
-        </p>
-        <div class="tags">
-          <span>Interactive UI</span><span>Scoring</span><span>Debugging</span>
-        </div>
-      </div>
-    </article>
+.section-header {
+  max-width: 650px;
+  margin-bottom: 48px;
+}
 
-    <article class="project">
-      <div class="project-art orange">
-        <div class="mock-window">
-          <div class="mock-top">● ● ●</div>
-          <div class="mock-line lime"></div>
-          <div class="mock-line"></div>
-          <div class="mock-boxes"><i></i><i></i><i></i></div>
-        </div>
-      </div>
-      <div class="project-content">
-        <p class="project-type">PERSONAL PROJECT</p>
-        <h3>Authentication & Survey Web App</h3>
-        <p>
-          Built and tested form validation logic to prevent user input
-          errors and support reliable data collection.
-        </p>
-        <div class="tags">
-          <span>Forms</span><span>Validation</span><span>HTML</span><span>CSS</span>
-        </div>
-      </div>
-    </article>
+.section-header h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.25;
+  margin-bottom: 12px;
+}
 
-    <article class="project">
-      <div class="project-art green">
-        <div class="mock-window">
-          <div class="mock-top">● ● ●</div>
-          <div class="mock-line lime"></div>
-          <div class="mock-line"></div>
-          <div class="mock-boxes"><i></i><i></i><i></i></div>
-        </div>
-      </div>
-      <div class="project-content">
-        <p class="project-type">LIVE COMPANY PROJECT</p>
-        <h3>WAPILA Website Redesign</h3>
-        <p>
-          Diagnosed usability issues on a live company website and
-          implemented fixes to improve clarity, navigation, and
-          overall user experience.
-        </p>
-        <div class="tags">
-          <span>WordPress</span><span>UI/UX</span><span>Usability</span>
-        </div>
-      </div>
-    </article>
+.section-header p {
+  color: #64748b;
+  font-size: 1rem;
+}
 
-  </div>
-</section>
+/* ==========================================================================
+   HEADER / NAVIGATION
+   ========================================================================== */
+.header {
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #e2e8f0;
+  padding: 16px 0;
+}
 
-<section class="section" id="experience">
-  <div class="section-heading">
-    <p class="eyebrow">PROFESSIONAL BACKGROUND</p>
-    <h2>Work <span>experience.</span></h2>
-  </div>
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  <div class="timeline">
+.logo {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #0f172a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
 
-    <article class="experience">
-      <div class="experience-date">
-        <strong>Sep 2024 – Present</strong>
-        <span>WAPILA Digital Solution</span>
-      </div>
-      <div>
-        <h3>UI/UX Designer & WordPress Developer</h3>
-        <ul>
-          <li>Diagnosed and resolved front-end display and usability issues across web pages.</li>
-          <li>Acted as a technical point of contact between design, development, and stakeholders.</li>
-          <li>Maintained WordPress sites, themes, and plugins, resolving layout, content, and configuration issues.</li>
-          <li>Gathered user feedback to identify recurring issues and improve accessibility and usability.</li>
-          <li>Created Figma wireframes and prototypes to test solutions before implementation.</li>
-        </ul>
-      </div>
-    </article>
+.logo-icon {
+  width: 12px;
+  height: 12px;
+  background-color: #6366f1;
+  border-radius: 50%;
+  display: inline-block;
+}
 
-    <article class="experience">
-      <div class="experience-date">
-        <strong>Jul 2024 – Sep 2024</strong>
-        <span>WAPILA</span>
-      </div>
-      <div>
-        <h3>UI/UX Intern</h3>
-        <ul>
-          <li>Practiced wireframing, prototyping, and usability testing to understand and resolve user pain points.</li>
-        </ul>
-      </div>
-    </article>
+.nav {
+  display: flex;
+  gap: 28px;
+}
 
-    <article class="experience">
-      <div class="experience-date">
-        <strong>Apr 2024 – Jun 2024</strong>
-        <span>DNIT</span>
-      </div>
-      <div>
-        <h3>Content & Social Media Intern</h3>
-        <ul>
-          <li>Managed content planning, scheduling, and engagement across platforms.</li>
-          <li>Responded to audience queries and feedback to maintain brand visibility.</li>
-        </ul>
-      </div>
-    </article>
+.nav a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #475569;
+  transition: color 0.2s;
+}
 
-  </div>
-</section>
+.nav a:hover {
+  color: #6366f1;
+}
 
-<section class="section" id="skills">
-  <div class="section-heading">
-    <p class="eyebrow">TECHNICAL & SOFT SKILLS</p>
-    <h2>Skills & <span>tools.</span></h2>
-  </div>
+/* ==========================================================================
+   BUTTONS & BADGES
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: all 0.2s;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
 
-  <div class="skills-grid">
-    <div class="skill-card">
-      <h3>Technical Support</h3>
-      <p>Technical troubleshooting, issue diagnosis, web/UI issues, WordPress issues, form troubleshooting.</p>
-    </div>
-    <div class="skill-card">
-      <h3>UI/UX Design</h3>
-      <p>Figma, wireframing, prototyping, usability testing, user-centered problem solving.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Web Development</h3>
-      <p>HTML5, CSS3, Bootstrap, responsive design, front-end debugging.</p>
-    </div>
-    <div class="skill-card">
-      <h3>WordPress</h3>
-      <p>Themes, plugins, site management, content updates, layout troubleshooting.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Communication</h3>
-      <p>Customer empathy, patience, clear communication, teamwork, stakeholder coordination.</p>
-    </div>
-    <div class="skill-card">
-      <h3>Productivity</h3>
-      <p>MS Excel (Basic), MS Word, documentation, adaptability, quick learning.</p>
-    </div>
-  </div>
-</section>
+.btn-sm {
+  padding: 8px 16px;
+  font-size: 0.825rem;
+}
 
-<section class="section" id="education">
-  <div class="section-heading">
-    <p class="eyebrow">EDUCATION & CERTIFICATIONS</p>
-    <h2>My <span>background.</span></h2>
-  </div>
+.btn-primary {
+  background-color: #6366f1;
+  color: #ffffff;
+}
 
-  <div class="education-grid">
-    <div class="education-card">
-      <h3>B.Tech in Computer Science Engineering</h3>
-      <p>CompuCom Institute of Information Technology and Management, Jaipur</p>
-      <span>2022 – 2025</span>
-    </div>
+.btn-primary:hover {
+  background-color: #4f46e5;
+}
 
-    <div class="education-card">
-      <h3>Diploma in Computer Science Engineering</h3>
-      <p>Government R.C. Khaitan Polytechnic College, Jaipur</p>
-      <span>2019 – 2021</span>
-    </div>
+.btn-secondary {
+  background-color: #f1f5f9;
+  color: #334155;
+}
 
-    <div class="education-card">
-      <h3>Class X</h3>
-      <p>Rajendra Public Senior Secondary School, Jaipur</p>
-      <span>2017 – 2018</span>
-    </div>
+.btn-secondary:hover {
+  background-color: #e2e8f0;
+}
 
-    <div class="education-card">
-      <h3>Certifications</h3>
-      <p>UI/UX Design Certification</p>
-      <p>Google Digital Marketing Certification – Google Digital Garage</p>
-    </div>
-  </div>
-</section>
+.btn-outline {
+  border-color: #cbd5e1;
+  color: #475569;
+}
 
-<section class="section" id="contact">
-  <div class="contact-card">
-    <div>
-      <p class="eyebrow">LET'S CONNECT</p>
-      <h2>Let's solve problems<br>and create better experiences.</h2>
-      <p>Feel free to connect with me for opportunities in technical support, UI/UX design, and WordPress development.</p>
-    </div>
-    <div class="contact-links">
-      <a class="btn primary" href="mailto:nipurnamathur@gmail.com">Email Me ↗</a>
-      <a class="btn secondary" href="tel:+917014300627">+91 70143 00627</a>
-      <a class="btn secondary" href="https://github.com/nipurnamathur19" target="_blank">GitHub ↗</a>
-      <a class="btn secondary"href=" https://www.linkedin.com/in/nipurna-mathur-007a1921b/" target="_blank">LinkedIn ↗</a>
-    </div>
-  </div>
-</section>
-</main>
+.btn-outline:hover {
+  border-color: #94a3b8;
+  background-color: #f8fafc;
+}
 
-<footer>
-  <p>© <span id="year"></span> Nipurnna Mathur. All rights reserved.</p>
-</footer>
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #6366f1;
+  background-color: #eef2ff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+/* ==========================================================================
+   HERO SECTION
+   ========================================================================== */
+.hero-section {
+  padding: 100px 0 120px 0;
+  background: linear-gradient(180deg, #f5f6ff 0%, #ffffff 100%);
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero-content h1 span {
+  color: #6366f1;
+}
+
+.hero-subtext {
+  font-size: 1.05rem;
+  color: #64748b;
+  margin-bottom: 28px;
+  max-width: 540px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(99, 102, 241, 0.08);
+  border: 1px solid #eef2ff;
+  text-align: center;
+  width: 100%;
+  max-width: 320px;
+}
+
+.profile-img-placeholder {
+  width: 90px;
+  height: 90px;
+  background-color: #eef2ff;
+  border-radius: 50%;
+  margin: 0 auto 16px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+}
+
+.hero-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hero-card p {
+  font-size: 0.85rem;
+  color: #64748b;
+  margin-bottom: 16px;
+}
+
+.card-tags {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tag {
+  font-size: 0.725rem;
+  background-color: #f1f5f9;
+  color: #475569;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+/* ==========================================================================
+   CARDS & GRIDS
+   ========================================================================== */
+.grid {
+  display: grid;
+  gap: 24px;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 28px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.03);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.highlight-card {
+  background-color: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+.highlight-card h3 {
+  color: #4338ca;
+}
+
+.dark-card {
+  background-color: #1e1b4b;
+  color: #ffffff;
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dark-card h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.dark-card p {
+  color: #c7d2fe;
+  margin-bottom: 20px;
+}
+
+.project-card .project-preview {
+  width: 100%;
+  height: 140px;
+  background-color: #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.project-card h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.link-btn {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6366f1;
+}
+
+/* ==========================================================================
+   PROCESS GRID (HOW I WORK)
+   ========================================================================== */
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.process-step {
+  background-color: #ffffff;
+  padding: 20px 16px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.step-num {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: #6366f1;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.process-step h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.process-step p {
+  font-size: 0.775rem;
+  color: #64748b;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   SKILLS & EXPERIENCE
+   ========================================================================== */
+.skill-list li {
+  font-size: 0.875rem;
+  color: #475569;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 14px;
+}
+
+.skill-list li::before {
+  content: "•";
+  color: #6366f1;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+.exp-duration {
+  display: block;
+  font-size: 0.775rem;
+  color: #6366f1;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+.footer {
+  padding: 32px 0;
+  background-color: #ffffff;
+  border-top: 1px solid #e2e8f0;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+/* ==========================================================================
+   RESPONSIVE LAYOUT
+   ========================================================================== */
+@media (max-width: 992px) {
+  .grid-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .grid-3, .grid-4, .process-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav {
+    display: none;
+  }
+}
